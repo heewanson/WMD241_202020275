@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+.section {
+  padding: 16px;
+  background-color: aqua;
+  border: 1px solid #f00;
+}
+.container {
+  background-color: bisque;
+  max-width: 50rem;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.children {
+  border: 1px #00;
+}
