@@ -8,16 +8,67 @@ body {
 }
 
 .container {
-  max-width: 100rem;
+  max-width: 75rem;
   margin-inline: auto;
+  /* forwork */
   background-color: #fff;
 }
 .navigation {
-  background-color: aquamarine;
-  padding-inline: 40px;
+  display: flex;
+  padding-block: 0.5rem;
+  padding-inline: 2.5rem;
   justify-content: space-between;
+  /* forwork */
+  /* background-color: aquamarine; */
+}
+.navigation > .navigation__menu-group {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-left: 0;
+  margin-block: 0;
+  list-style: none;
+
+  /* for work */
+}
+.navigation__menu-group.navigation__menu-group-left {
+  gap: 30px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.navigation__menu-group.navigation__menu-group-right {
+  margin: 15px;
+  font-size: 18px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .navigation > * {
-  background-color: bisque;
+  /* background-color: bisque; */
+}
+.section.section-hero {
+  padding-left: 0;
+  margin-block: 0;
+  list-style: none;
+}
+.section-hero__top {
+  display: block;
+  list-style: none;
+  text-align: center;
+}
+.section-hero__top__Abstract {
+  font-size: 6.5625rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.section-hero__top__Helppage {
+  font-size: 1.5625rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
 }
