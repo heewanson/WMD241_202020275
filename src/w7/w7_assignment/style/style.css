@@ -1,0 +1,23 @@
+. {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
+.container {
+  max-width: 100rem;
+  margin-inline: auto;
+  background-color: #fff;
+}
+.navigation {
+  background-color: aquamarine;
+  padding-inline: 40px;
+  justify-content: space-between;
+}
+
+.navigation > * {
+  background-color: bisque;
+}
