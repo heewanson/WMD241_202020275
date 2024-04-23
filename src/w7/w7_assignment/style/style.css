@@ -4,13 +4,13 @@
 
 body {
   margin: 0;
-  background-color: #f3f3f3;
 }
 
 .container {
   max-width: 75rem;
   margin-inline: auto;
   /* forwork */
+
   background-color: #fff;
 }
 .navigation {
@@ -18,6 +18,7 @@ body {
   padding-block: 0.5rem;
   padding-inline: 2.5rem;
   justify-content: space-between;
+  border-bottom: 3px solid;
   /* forwork */
   /* background-color: aquamarine; */
 }
@@ -50,15 +51,19 @@ body {
 .navigation > * {
   /* background-color: bisque; */
 }
-.section.section-hero {
+.section-hero {
   padding-left: 0;
   margin-block: 0;
   list-style: none;
 }
 .section-hero__top {
-  display: block;
   list-style: none;
   text-align: center;
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  border-right: 3px solid;
+  margin: 0px;
+  padding: 0px;
 }
 .section-hero__top__Abstract {
   font-size: 6.5625rem;
@@ -70,5 +75,87 @@ body {
   font-size: 1.5625rem;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
+  margin: 0;
   font-style: normal;
+}
+.abstract_link > * {
+  font-size: 1rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  list-style: none;
+  text-decoration: underline;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  /* 글자에 밑줄 */
+}
+.section-hero__bottom {
+  display: flex;
+  list-style: none;
+  font-family: "Archivo", sans-serif;
+  justify-content: center;
+}
+.left {
+  width: 400px;
+  padding: 0px 16px 24px;
+  list-style: circle;
+  justify-content: center;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 3px solid;
+}
+.recreate_this_to_learn_1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 0.9375rem;
+}
+.middle {
+  width: 400px;
+  padding: 0px 16px 24px;
+  list-style: circle;
+  justify-content: center;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 3px solid;
+}
+.color_palette {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 0.9375rem;
+}
+.color_palette_list {
+}
+.right {
+  width: 400px;
+  padding: 0px 16px 24px;
+  list-style: circle;
+  justify-content: center;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  list-style: none;
+  text-decoration: underline;
+  line-height: 1.5;
+  border: 3px solid;
+}
+.Recources {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 0.9375rem;
 }
