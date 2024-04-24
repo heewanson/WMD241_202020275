@@ -35,7 +35,7 @@ body {
 .navigation__menu-group.navigation__menu-group-left {
   gap: 30px;
   font-family: "DM Serif Display", serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 30px;
   font-style: normal;
 }
@@ -74,7 +74,7 @@ body {
 .section-hero__top__Helppage {
   font-size: 1.5625rem;
   font-family: "DM Serif Display", serif;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
   font-style: normal;
 }
@@ -90,15 +90,20 @@ body {
   justify-content: center;
   /* 글자에 밑줄 */
 }
+
 .section-hero__bottom {
   display: flex;
-  list-style: none;
-  font-family: "Archivo", sans-serif;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.section-hero__bottom > * {
+  width: 25rem;
+  height: 12.5rem;
+  border: solid 2px;
+  padding: 0px 16px 24px;
+  margin: 0;
 }
 .left {
-  width: 400px;
-  padding: 0px 16px 24px;
   list-style: circle;
   justify-content: center;
   font-family: "Archivo", sans-serif;
@@ -106,65 +111,139 @@ body {
   font-style: normal;
   font-size: 1rem;
   line-height: 1.5;
-  border: 3px solid;
+  text-align: center;
 }
-.recreate_this_to_learn_1 {
+.section-hero__bottom-title {
   font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5625rem;
-  margin-top: 1.5625rem;
-  margin-bottom: 0.9375rem;
-}
-.middle {
-  width: 400px;
-  padding: 0px 16px 24px;
-  list-style: circle;
-  justify-content: center;
-  font-family: "Archivo", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.5;
-  border: 3px solid;
-}
-.color_palette {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5625rem;
-  margin-top: 1.5625rem;
-  margin-bottom: 0.9375rem;
-}
-.color_palette_list {
-}
-.right {
-  width: 400px;
-  padding: 0px 16px 24px;
-  list-style: circle;
-  justify-content: center;
-  font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-style: normal;
-  list-style: none;
-  text-decoration: underline;
-  line-height: 1.5;
-  border: 3px solid;
-}
-.Recources {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 1.5625rem;
   margin-top: 1.5625rem;
   margin-bottom: 0.9375rem;
+  text-align: center;
+  list-style: none;
 }
+
+.middle {
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.middle .section-hero__bottom-title {
+  flex-basis: 100%;
+  text-align: center;
+}
+.middle ol {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.middle li {
+  flex: 0 1 50%;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+}
+.right {
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  list-style: none;
+  text-decoration: underline;
+}
+
 .ref-img {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2.5rem;
-  margin-top: 3.125rem;
+  padding: 3.125rem;
   text-align: center;
-  border-top: solid 0.1875rem;
+  border-top: 2px solid;
+}
+.section2 {
+  padding: 50px; /* 패딩 값 추가 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.blackbox,
+.graybox,
+.whitebox {
+  flex: 1 1 calc(33.33% - 20px); /* 세 개의 상자를 각각 1/3의 너비로 설정 */
+  margin: 0 12.5px; /* 각 상자의 마진 조정 */
+}
+
+.blackbox > *,
+.graybox > *,
+.whitebox > * {
+  width: 100%;
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  list-style: none;
+  padding: 25px; /* 내부 패딩 값 추가 */
+}
+
+.section-hero__bottom-title {
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 0.9375rem;
+  list-style: none;
+}
+
+.blackbox > *,
+.graybox > *,
+.whitebox > * {
+  color: #fff; /* 글자 색상 변경 */
+}
+.blackbox > * {
+  background-color: black;
+}
+.graybox > * {
+  background-color: #494949; /* 회색 상자 배경색 변경 */
+}
+
+.whitebox > * {
+  background-color: #fff; /* 흰색 상자 배경색 변경 */
+  color: black; /* 글자 색상 변경 */
+  border: 2px solid;
+}
+
+.footer {
+  display: flex;
+  padding-block: 2.5rem;
+  padding-inline: 30px;
+  flex-direction: column;
+  background-color: black;
+  color: #fff;
+  align-items: center;
+}
+.footer > .footer__top {
+  list-style: none;
+  padding-bottom: 1rem;
+}
+.footer > .footer__menu-group {
+  display: flex;
+  gap: 40px;
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  align-items: center;
+  padding-left: 0;
+  margin-block: 0;
+  list-style: none;
 }
