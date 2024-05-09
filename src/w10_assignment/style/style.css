@@ -20,7 +20,7 @@ body {
 .navigation {
   display: flex;
   justify-content: space-around;
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
   background-color: #f6f6eb;
   color: #381fd1;
@@ -50,6 +50,7 @@ body {
   background-color: #381fd1;
 }
 .navigation--box {
+  border-radius: 0.25rem;
   background-color: #381fd1;
   color: #f6f6eb;
   padding-inline: 8px;
@@ -60,7 +61,7 @@ body {
   -moz-column-gap: 24px;
        column-gap: 24px;
   row-gap: 24px;
-  grid-template-columns: 280px repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 280px repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .sidebar {
@@ -69,6 +70,15 @@ body {
   padding-block: 1rem;
   font-weight: 700;
   list-style-type: none;
+  grid-column: 1/span 1;
+  grid-row: 1/span 3;
+}
+.sidebar__search-input {
+  border-radius: 0.25rem;
+  padding-inline: 40px 16px;
+  box-sizing: 220 40;
+  background-color: #fff;
+  border: 2px solid #89898c;
 }
 
 .sidebar > li {
@@ -79,11 +89,82 @@ body {
 .purplebox {
   background-color: #f3f2fc;
   padding: 24px;
+  border-radius: 6px;
 }
-
-.purplebox > h2 {
+.purplebox__top {
+  font-size: 19px;
+  font-weight: 800;
   margin: 0;
   color: #11284b;
+}
+.purplebox__middle {
+  font-size: 12px;
+  padding-block: 8px 16px;
+}
+.purplebox__bottom {
+  border-radius: 0.25rem;
+  background-color: #381fd1;
+  color: #f6f6eb;
+  padding: 8px 16px;
+}
+
+.title {
+  grid-column: 2/-1;
+  padding-top: 64px;
+}
+.title__top {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.title__top--left {
+  font-size: 48px;
+  font-weight: bold;
+}
+.title__top--right {
+  font-size: 16px;
+  font-weight: 700;
+  color: #381fd1;
+  text-decoration: underline;
+}
+.title__bottom {
+  font-size: 20px;
+  padding-left: 40px;
+  padding-bottom: 24px;
+}
+
+.card__collection {
+  display: grid;
+  row-gap: 24px;
+  grid-column: 2/-1;
+  grid-row: 1/-1;
+  grid-template-columns: subgrid;
+  grid-auto-rows: subgrid;
+}
+
+.card {
+  grid-column: 2/-4;
+  grid-row: 2/-1;
+  padding-inline: 24px;
+  padding-block: 40px;
+  font-size: 16px;
+}
+.card__top--img {
+  max-width: 40px;
+}
+.card__middle {
+  color: #381fd1;
+}
+.card__bottom {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card2 {
+  padding: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #f3f2fc;
 }
 
 .footer {
