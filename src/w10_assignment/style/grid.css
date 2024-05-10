@@ -1,0 +1,75 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
+.navigation--left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navigation--right {
+  display: flex;
+  gap: 20px;
+}
+
+.grid {
+  display: grid;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.grid {
+  display: grid;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: 280px repeat(auto-fit, minmax(240px, 1fr));
+  max-width: 1, 424px;
+  padding: 0.75rem;
+  margin-inline: auto;
+}
+
+.sidebar {
+  grid-column: 1/span 1;
+  grid-row: 1/span 3;
+}
+
+.card-collection {
+  display: grid;
+  row-gap: 24px;
+  grid-column: 3/-1;
+  grid-row: 2/-1;
+  grid-template-columns: subgrid;
+  grid-auto-rows: subgrid;
+}
+
+.card_collection2 {
+  row-gap: 24px;
+  grid-column: 2/-1;
+  grid-row: 4/-1;
+  grid-template-columns: subgrid;
+  grid-auto-rows: subgrid;
+}
+
+.title {
+  grid-column: 2/-1;
+}
+
+.footer {
+  display: grid;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+  row-gap: 48x;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}

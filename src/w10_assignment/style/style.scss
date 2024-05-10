@@ -12,13 +12,11 @@ body {
   font-style: normal;
 }
 .container {
-  max-width: 1280px;
+  // max-width: 1280px;
   padding: 0.75rem;
   margin-inline: auto;
 }
 .navigation {
-  display: flex;
-  justify-content: space-around;
   font-weight: 800;
   font-style: normal;
   background-color: #f6f6eb;
@@ -29,17 +27,13 @@ body {
 
   &--left {
     list-style-type: none;
-    display: flex;
-    gap: 40px;
-    align-items: center;
+
     margin-block: 0;
     padding: 0px;
     list-style: none;
   }
   &--right {
     list-style-type: none;
-    display: flex;
-    gap: 20px;
     align-items: center;
     margin-block: 0;
     list-style: none;
@@ -57,17 +51,6 @@ body {
   }
 }
 .grid {
-  // display: grid;
-  // row-gap: 24px;
-  // grid-column: 2/-1;
-  // grid-row: 1 / -1;
-  // grid-template-columns: subgrid; //.container의 rid-template-columns 를 따라감
-  // grid-auto-rows: subgrid;
-
-  display: grid;
-  column-gap: 24px;
-  row-gap: 24px;
-  grid-template-columns: 280px repeat(auto-fit, minmax(280px, 1fr));
 }
 .sidebar {
   color: #4b4b4e;
@@ -75,8 +58,7 @@ body {
   padding-block: 1rem;
   font-weight: 700;
   list-style-type: none;
-  grid-column: 1 / span 1; //children 에게 부여되는 속성
-  grid-row: 1 / span 3;
+
   &__search-input {
     border-radius: 0.25rem;
     padding-inline: 40px 16px;
@@ -111,7 +93,6 @@ body {
   }
 }
 .title {
-  grid-column: 2/-1;
   padding-top: 64px;
   &__top {
     display: flex;
@@ -135,14 +116,6 @@ body {
     padding-bottom: 24px;
   }
 }
-.card__collection {
-  display: grid;
-  row-gap: 24px;
-  grid-column: 2/-1;
-  grid-row: 1 / -1;
-  grid-template-columns: subgrid; //.container의 rid-template-columns 를 따라감
-  grid-auto-rows: subgrid;
-}
 
 .card {
   grid-column: 2/-4;
@@ -150,6 +123,8 @@ body {
   padding-inline: 24px;
   padding-block: 40px;
   font-size: 16px;
+  border: #4b4b4e 1px solid;
+  border-radius: 0.25rem;
   &__top {
     &--img {
       max-width: 40px;
@@ -170,8 +145,9 @@ body {
   background-color: #f3f2fc;
 }
 .footer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  font-size: 14px;
+  font-weight: 700;
   background-color: #11284b;
   color: #f3f2fc;
+  padding-inline: 24px;
 }
