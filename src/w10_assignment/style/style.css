@@ -245,7 +245,6 @@ body {
   font-weight: 700;
   background-color: #11284b;
   color: #f3f2fc;
-  padding-inline: 48px;
   padding-top: 80px;
   margin-top: 96px;
 }
@@ -258,7 +257,7 @@ body {
 .footer__bottom-right {
   font-size: 16px;
   color: #fedb63;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .logos_1 {
